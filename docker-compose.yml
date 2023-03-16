@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  client:
+    build: .
+    container_name: counter-client-frontend
+    ports:
+      - '2003:3000'
+    volumes:
+      - .:/app
+    stdin_open: true
+    tty: true
